@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Fichero Fuente include/permutacion.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('permutacion_8h_source.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">permutacion.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="permutacion_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PERMUTACION_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PERMUTACION_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="imagen_8h.html" title="Fichero cabecera para la clase imagen.">imagen.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="code" href="classPermutacion.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPermutacion.html" title="Permutacion permuta filas de una imagen.">Permutacion</a>{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="code" href="classPermutacion.html#a3a02b69b968d9c855d8d132ba13f52ca">   17</a></span>&#160;    <a class="code" href="classImagen.html" title="Imagen es una matriz donde se guarda una imagen.">Imagen</a> <a class="code" href="classPermutacion.html#a3a02b69b968d9c855d8d132ba13f52ca" title="imagen permutada">perm</a>; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="code" href="classPermutacion.html#a79fb1eca2a8489f3b6acc9ecbd5b7720">   18</a></span>&#160;    <span class="keywordtype">int</span> *<a class="code" href="classPermutacion.html#a79fb1eca2a8489f3b6acc9ecbd5b7720" title="fichero que almacena las permutaciones">fichero</a>; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="code" href="classPermutacion.html#a5596aca7cc351a226a8a4a279b0f6524">   19</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classPermutacion.html#a5596aca7cc351a226a8a4a279b0f6524" title="filas de la imagen">filas</a>; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="code" href="classPermutacion.html#a5d1683786addb5899ca870ab9a1a8be8">   20</a></span>&#160;    <a class="code" href="classImagen.html" title="Imagen es una matriz donde se guarda una imagen.">Imagen</a> <a class="code" href="classPermutacion.html#a5d1683786addb5899ca870ab9a1a8be8" title="copia de la imagen">copia</a>; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPermutacion.html#a1ee44dc02d6ebc30e7f53306df38ced0" title="Guarda el fichero.">AlmacenaFichero</a>( <span class="keyword">const</span> <span class="keywordtype">char</span> *datos );</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPermutacion.html#a67f3b01d2639e1232789e9d7a1f4aa73" title="Modifica la imagen fila a fila.">Modificar</a>( <span class="keywordtype">int</span> fila );</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPermutacion.html#abfc84d82f6882d25652121617dad0a0b" title="Se encarga de todo el proceso de permutado.">Permutar</a>( <span class="keyword">const</span> <span class="keywordtype">char</span> *entrada, <span class="keyword">const</span> <span class="keywordtype">char</span> *datos, <span class="keyword">const</span> <span class="keywordtype">char</span> *salida );</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classPermutacion.html#a0a3f1130b1ed70b4327d9188dba48b9a" title="Comprueba si falta alguna fila o si se repiten.">EstanTodos</a>( );</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPermutacion.html#ae2d890ddfbb2fcd095632382606eba75" title="Decodifica una imagen.">Decodificar</a>( <span class="keyword">const</span> <span class="keywordtype">char</span> *entrada, <span class="keyword">const</span> <span class="keywordtype">char</span> *datos, <span class="keyword">const</span> <span class="keywordtype">char</span> *salida );</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classPermutacion.html#adf0cbde4a84e7967883a0464d436207e" title="Busca la fila y devuelve la posicion en el que está">Busca</a>( <span class="keywordtype">int</span> f );</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">/* Fin Fichero: permutacion.h */</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<hr>
+<small>ETS Ingeniería Informática y Telecomunicaciones. Universidad de Granada.
+</small>
